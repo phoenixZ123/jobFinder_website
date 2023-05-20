@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Lato:wght@100;300;400&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: white;
+  height:100%;
+}
+
+   
+li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover::before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #2a68ff;
+  right: 0;
+  color: #2a68ff;
+  bottom:-10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+card {
+  background: url(/src/assets/line.png);
+}
